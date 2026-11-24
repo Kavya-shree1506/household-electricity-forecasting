@@ -88,13 +88,14 @@ The dataset was divided chronologically:
 The evaluation metrics represent daily average electricity consumption prediction performance.
 
 ## Project Files
+- `household_electricity_forecasting.ipynb` – Complete analysis and model development.
+- `electricity_forecasting_results.csv` – Actual and predicted consumption values.
+- `model_performance_results.csv` – Individual model evaluation results.
+- `model_comparison_results.csv` – Comparison of all three models.
+- `feature_importance.png` – Gradient Boosting feature importance graph.
+- `actual_vs_predicted.png` – Actual vs predicted consumption visualization.
+- `README.md` – Project documentation.
 
-| File | Description |
-|---|---|
-| `household_electricity_forecasting.ipynb` | Complete analysis, preprocessing, visualisation and forecasting notebook |
-| `model_performance_results.csv` | Model performance metrics |
-| `electricity_forecasting_results.csv` | Actual and predicted electricity consumption values |
-| `README.md` | Project documentation |
 
 ## Key Learning Outcomes
 
