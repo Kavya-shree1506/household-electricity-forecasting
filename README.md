@@ -114,6 +114,28 @@ The evaluation metrics represent daily average electricity consumption predictio
 - Perform more detailed feature importance analysis.
 - Develop an interactive electricity consumption dashboard.
 
+- ## Model Performance Comparison
+
+Three approaches were evaluated using the same chronological training and testing split.
+
+| Model | MAE | RMSE | R² Score |
+|---|---:|---:|---:|
+| Baseline | 0.2099 | 0.2900 | 0.2398 |
+| Random Forest | 0.1836 | 0.2426 | 0.4680 |
+| Gradient Boosting | 0.1692 | 0.2372 | 0.4913 |
+
+### Best Performing Model
+
+**Gradient Boosting Regressor** achieved the best performance among the three evaluated models.
+
+- Lowest MAE: 0.1692
+- Lowest RMSE: 0.2372
+- Highest R² Score: 0.4913
+
+### Model Comparison CSV
+
+The complete model comparison results are available in `model_comparison_results.csv`.
+
 ## Author
 
 **Kavya Shree R Sekar**
