@@ -1,0 +1,2 @@
+Model,MAE,RMSE,R2_Score
+Random Forest,0.1836,0.2426,0.468
