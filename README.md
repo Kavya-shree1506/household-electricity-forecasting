@@ -167,6 +167,8 @@ The following visualization compares actual daily household electricity consumpt
 
 The visualization helps assess how closely the models follow the actual electricity consumption patterns.
 
+![Actual vs Predicted](actual_vs_predicted.png)
+
 ## Author
 
 **Kavya Shree R Sekar**
