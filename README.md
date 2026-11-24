@@ -75,84 +75,48 @@ The project uses machine learning approaches for daily electricity consumption f
 
 The Random Forest model was evaluated using:
 
-Metric
-
-Result
-
-MAE
-
-0.1836
-
-RMSE
-
-0.2426
-
-R² Score
-
-0.4680
+| Metric | Result |
+|---|---:|
+| MAE | 0.1836 |
+| RMSE | 0.2426 |
+| R² Score | 0.4680 |
 
 The dataset was divided chronologically:
-
-Training records: 1,091
-
-Testing records: 273
+- Training records: 1,091
+- Testing records: 273
 
 The evaluation metrics represent daily average electricity consumption prediction performance.
 
-Project Files
+## Project Files
 
-File
+| File | Description |
+|---|---|
+| `household_electricity_forecasting.ipynb` | Complete analysis, preprocessing, visualisation and forecasting notebook |
+| `model_performance_results.csv` | Model performance metrics |
+| `electricity_forecasting_results.csv` | Actual and predicted electricity consumption values |
+| `README.md` | Project documentation |
 
-Description
+## Key Learning Outcomes
 
-household_electricity_forecasting.ipynb
+- Working with large datasets using Pandas.
+- Handling missing values in time-series data.
+- Performing time-based data aggregation.
+- Creating lag and rolling-window features.
+- Implementing machine learning regression models.
+- Evaluating forecasting performance.
+- Documenting and managing projects using GitHub.
 
-Complete analysis, preprocessing, visualisation and forecasting notebook
+## Future Improvements
 
-model_performance_results.csv
+- Experiment with additional forecasting algorithms.
+- Improve model performance through hyperparameter tuning.
+- Explore seasonal and trend-based forecasting.
+- Perform more detailed feature importance analysis.
+- Develop an interactive electricity consumption dashboard.
 
-Model performance metrics
+## Author
 
-electricity_forecasting_results.csv
+**Kavya Shree R Sekar**
 
-Actual and predicted electricity consumption values
-
-README.md
-
-Project documentation
-
-Key Learning Outcomes
-
-Working with large datasets using Pandas.
-
-Handling missing values in time-series data.
-
-Performing time-based data aggregation.
-
-Creating lag and rolling-window features.
-
-Implementing machine learning regression models.
-
-Evaluating forecasting performance.
-
-Documenting and managing projects using GitHub.
-
-Future Improvements
-
-Experiment with additional forecasting algorithms.
-
-Improve model performance through hyperparameter tuning.
-
-Explore seasonal and trend-based forecasting.
-
-Perform more detailed feature importance analysis.
-
-Develop an interactive electricity consumption dashboard.
-
-Author
-
-Kavya Shree R Sekar
-
-LinkedIn
-
-GitHub
+- [LinkedIn](https://www.linkedin.com/in/kavya-shree-r-sekar-07a08833a/)
+- [GitHub](https://github.com/Kavya-shree1506)
