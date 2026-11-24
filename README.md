@@ -136,6 +136,28 @@ Three approaches were evaluated using the same chronological training and testin
 
 The complete model comparison results are available in `model_comparison_results.csv`.
 
+## Feature Importance Analysis
+
+Feature importance was analysed using the Gradient Boosting Regressor to understand which input variables contributed most to the model's predictions.
+
+| Feature | Importance |
+|---|---:|
+| rolling_mean_7 | 0.502979 |
+| lag_1 | 0.296744 |
+| day_of_week | 0.097077 |
+| lag_7 | 0.053979 |
+| month | 0.049222 |
+
+### Key Findings
+
+- The 7-day rolling average was the most influential feature.
+- Previous day's consumption was the second most influential feature.
+- Day of the week also contributed to the predictions.
+
+### Visualization
+
+![Gradient Boosting Feature Importance](feature_importance.png)
+
 ## Author
 
 **Kavya Shree R Sekar**
