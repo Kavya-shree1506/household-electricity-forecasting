@@ -73,7 +73,9 @@ The project uses machine learning approaches for daily electricity consumption f
 
 ### 6. Model Evaluation
 
-The Random Forest model was evaluated using:
+The Random Forest model was evaluated using The Gradient Boosting model achieved the best performance among the three models, with an MAE of 0.1692, RMSE of 0.2372, and R² score of 0.4913.
+
+This indicates moderate predictive performance, with scope for further improvement.
 
 | Metric | Result |
 |---|---:|
