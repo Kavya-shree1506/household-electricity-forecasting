@@ -2,29 +2,29 @@
 
 ## Project Overview
 
-This project focuses on analysing historical household electricity consumption and developing machine learning models to forecast daily electricity usage.
+This project focuses on analysing and forecasting household electricity consumption using historical electricity usage data.
 
-Using time-series data, the project explores consumption patterns, handles missing values, performs feature engineering and evaluates predictive models.
+The project uses the Individual Household Electric Power Consumption dataset to explore electricity consumption patterns, perform exploratory data analysis, prepare time-series data, and develop machine learning models to predict daily average electricity consumption.
 
-## Objectives
+## Project Objectives
 
 - Analyse historical household electricity consumption.
-- Clean and preprocess time-series data.
-- Explore hourly and daily consumption patterns.
-- Engineer features for forecasting.
-- Train and evaluate machine learning models.
+- Identify consumption patterns and trends over time.
+- Perform data cleaning and preprocessing.
+- Visualise hourly and daily electricity consumption.
+- Develop machine learning models for consumption forecasting.
+- Evaluate model performance using appropriate metrics.
 - Compare actual and predicted electricity consumption.
 
 ## Dataset
 
-**Individual Household Electric Power Consumption Dataset**
+**Dataset:** Individual Household Electric Power Consumption
 
-Source: [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption)
+**Source:** UCI Machine Learning Repository
 
-- Historical data covering December 2006 to November 2010.
-- Original measurements recorded at one-minute intervals.
-- Nine original attributes.
-- Hourly aggregation used for analysis and forecasting.
+The dataset contains household electricity measurements collected over several years.
+
+The analysis primarily uses the `Global_active_power` variable to study electricity consumption.
 
 ## Technologies Used
 
@@ -34,58 +34,43 @@ Source: [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/23
 - Matplotlib
 - Scikit-learn
 - Google Colab
+- GitHub
 
 ## Project Workflow
 
-1. Dataset collection and extraction
-2. Data loading and inspection
-3. Missing-value analysis and cleaning
-4. Exploratory data analysis
-5. Hourly and daily aggregation
-6. Time-series feature engineering
-7. Chronological training and testing split
-8. Machine learning model development
-9. Model evaluation and comparison
-10. Actual vs predicted visualisation
+### 1. Data Collection
+- Obtained the household electricity consumption dataset.
+- Loaded the dataset into Google Colab.
 
-## Machine Learning Models
+### 2. Data Cleaning and Preprocessing
+- Handled missing values.
+- Converted date and time columns into datetime format.
+- Processed the complete dataset in chunks.
+- Aggregated hourly electricity consumption.
+- Handled isolated missing hourly values while preserving longer missing periods.
 
+### 3. Exploratory Data Analysis
+- Analysed electricity consumption statistics.
+- Visualised hourly consumption trends.
+- Resampled hourly data into daily average consumption.
+- Examined consumption patterns over time.
+
+### 4. Feature Engineering
+Created forecasting features including:
+- Previous day's consumption (`lag_1`)
+- Previous week's consumption (`lag_7`)
+- Seven-day rolling average
+- Day of the week
+- Month
+
+### 5. Model Development
+
+The project uses machine learning approaches for daily electricity consumption forecasting:
+
+- Baseline forecasting approach
 - Random Forest Regressor
 - Gradient Boosting Regressor
-- Previous-day consumption baseline
 
-## Initial Random Forest Results
+### 6. Model Evaluation
 
-| Evaluation Metric | Result |
-|---|---:|
-| MAE | 0.1836 |
-| RMSE | 0.2426 |
-| R² Score | 0.4680 |
-
-*Results are from the initial model evaluation on the held-out test period.*
-
-## Key Learning Outcomes
-
-- Working with real-world time-series data.
-- Handling missing observations and irregular data gaps.
-- Creating lag-based and rolling-average features.
-- Applying chronological model validation.
-- Evaluating regression models using MAE, RMSE and R².
-
-## Project Files
-
-- `household_electricity_forecasting.ipynb` – Complete analysis and model development notebook.
-- `README.md` – Project documentation.
-
-## Future Improvements
-
-- Experiment with additional forecasting algorithms.
-- Improve model performance through hyperparameter tuning.
-- Explore seasonal and weekly consumption patterns.
-- Develop an interactive electricity forecasting dashboard.
-
-## Author
-
-**Kavya Shree R Sekar**
-
-[GitHub](https://github.com/Kavya-shree1506) | [LinkedIn](https://www.linkedin.com/in/kavya-shree-r-sekar-07a08833a/)
+The Random Forest model was
