@@ -115,7 +115,7 @@ The evaluation metrics represent daily average electricity consumption predictio
 - Perform more detailed feature importance analysis.
 - Develop an interactive electricity consumption dashboard.
 
-- ## Model Performance Comparison
+## Model Performance Comparison
 
 Three approaches were evaluated using the same chronological training and testing split.
 
