@@ -173,7 +173,7 @@ The visualization helps assess how closely the models follow the actual electric
 
 ## Author
 
-**Kavya Shree R Sekar**
+**Kavya Shree Radhakrishnan Sekar**
 
 - [LinkedIn](https://www.linkedin.com/in/kavya-shree-r-sekar-07a08833a/)
 - [GitHub](https://github.com/Kavya-shree1506)
